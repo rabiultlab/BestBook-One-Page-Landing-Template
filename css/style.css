@@ -96,3 +96,35 @@ body{
 .hero-btns p a:hover{
     color: #000;
 }
+
+/* stats area */
+.stats{
+    padding: 90px;
+    padding-bottom: 120px;
+}
+.stat-num{
+    color: var(--primary);
+    font-size: 48px;
+    font-weight: bold;
+}
+.stat-title{
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 35px;
+}
+.stat-num::before {
+    position: absolute;
+    z-index: -1;
+    /* left: -17px;
+    top: -8px; */
+}
+.single-stat:nth-child(1) .stat-num::before{
+    content: url(../img/blob1.svg);
+}
+.single-stat:nth-child(2) .stat-num::before{
+    content: url(../img/blob2.svg);
+}
+.single-stat:nth-child(3) .stat-num::before{
+    content: url(../img/blob3.svg);
+}
