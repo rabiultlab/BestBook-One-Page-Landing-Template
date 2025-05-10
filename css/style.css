@@ -17,12 +17,33 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.hero.bg-cyan{
+    border-radius: 38px;
+}
+.p-section{
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.pt-section{
+    padding-top: 80px;
+}
 .btn-outline{
     color: var(--primary);
     padding: 12px 55px;
     border: 2px solid var(--primary);
     border-radius: 7px;
 
+}
+.btn-filled{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary);
+    padding: 12px 53px;
+    border-radius: 10px;
+}
+.btn-filled:hover{
+    color: #dcdcdc;
 }
 .btn-outline:hover{
     background-color: var(--primary);
@@ -45,4 +66,33 @@ body{
 }
 .nav-item:hover{
     color: var(--primary) !important;
+}
+
+/* Hero area */
+.bg-cyan{
+    background-color: #e4f5fe;
+}
+
+.site-title{
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 92px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+.site-desc{
+    font-size: 18px;
+    line-height: 37px;
+    color: #273f57;
+    margin-bottom: 40px;
+}
+.hero-btns p
+.hero-btns p a
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primary);
+}
+.hero-btns p a:hover{
+    color: #000;
 }
