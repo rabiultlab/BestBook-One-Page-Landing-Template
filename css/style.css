@@ -10,6 +10,9 @@ body{
     font-size: 15px;
     color: var(--secondary);
 }
+p{
+    line-height: 30px;
+}
 .container-custom{
     max-width: 1650px;
     width: 100%;
@@ -26,6 +29,13 @@ body{
 }
 .pt-section{
     padding-top: 80px;
+}
+.section-title{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 66px;
+    color: var(--primary);
+    padding-bottom: 20px;
 }
 .btn-outline{
     color: var(--primary);
@@ -113,11 +123,14 @@ body{
     font-weight: 600;
     margin-top: 35px;
 }
+.single-stat{
+    position: relative;
+}
 .stat-num::before {
     position: absolute;
     z-index: -1;
-    /* left: -17px;
-    top: -8px; */
+    left: -25px;
+    top: 10px;
 }
 .single-stat:nth-child(1) .stat-num::before{
     content: url(../img/blob1.svg);
@@ -127,4 +140,36 @@ body{
 }
 .single-stat:nth-child(3) .stat-num::before{
     content: url(../img/blob3.svg);
+}
+/* About are */
+.about{
+    padding-bottom: 175px;
+}
+.author{
+    position: relative;
+}
+.author img{
+    margin-left: 50px;
+    border: 10px solid #fff;
+    border-radius: 50px;
+}
+.author::before{
+    content: '';
+    position: absolute;
+    background-color: #e4f5fe;
+    height: 130%;
+    width: 390px;
+    top: -15%;
+    border-radius: 50px;
+    z-index: -9;
+}
+.social .list-inline-item:not(:last-child){
+    margin-right: 25px;
+}
+.social li a{
+    color: var(--primary);
+    font-size: 20px;
+}
+.social li a:hover{
+    color: var(--secondary);
 }
